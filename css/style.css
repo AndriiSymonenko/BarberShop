@@ -69,3 +69,6 @@ a{
 .news-list{
     list-style: none;
 }
+.news-list time{
+    text-transform: none;
+}
