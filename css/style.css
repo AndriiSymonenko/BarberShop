@@ -214,6 +214,13 @@ a{
 .filters {
     width: 180px;
 }
+.filter ul {
+    list-style: none;
+}
+
+.filter fieldset {
+    border: none;
+}
 
 .catalog {
     width: 700px;
@@ -281,6 +288,9 @@ a{
     line-height: 30px;
 }
 
+.product-info ul{
+    list-style: none;
+}
 .product-info h3 {
     list-style: none;
 }
@@ -290,7 +300,9 @@ a{
     text-align: center;
     background-color: #e5e5e5;
 }
-
+.product-info ul{
+    list-style: none;
+}
 .main-footer {
     color: #ffffff;
     background-color: #212121;
