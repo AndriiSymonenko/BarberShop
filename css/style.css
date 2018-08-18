@@ -31,6 +31,26 @@ h3 {
 a{
     text-decoration: none;
 }
+/* Обрезает изображение не давая выйти из родительского блока */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input [type="checkbox"].visually-hidden,
+input [type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .inner-page{
     color: #000000;
     background-color: #f9f6f3;
@@ -96,11 +116,25 @@ a{
     display: flex;
     justify-content: space-between;
 }
+/* Меню в строчку */
 .site-navigation{
     width: 620px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.site-navigation li {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 40px;
+}
+
 .user-navigation{
     width: 140px;
+}
+.user-navigation li{
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .inner-page .user-navigation{
     margin-left: auto;
@@ -212,6 +246,18 @@ a{
 .breadcrumbs-current {
     color: #aba9a7;
     margin-left: 35px;
+    position: relative;
+}
+
+.breadcrumbs-current::before {
+    content: "";
+    width:8px;
+    height: 8px;
+    background-color: #000000;
+    position: absolute;
+    top: 9px;
+    right: 77px;
+    transform: rotate(45deg);
 }
 
 .catalog-columns {
