@@ -304,17 +304,60 @@ input [type="radio"].visually-hidden {
 .contacts {
     width: 380px;
 }
+
+.contacts p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.appointment-info {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.appointment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .appointment {
     width: 300px;
 }
 
-.appointment-item input{
+.appointment-item {
+    width: 140px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.appointment-item label {
+    display: block;
+    margin-bottom: 9px;
+    margin-left: 15px;
+}
+
+.appointment-item input {
+    box-sizing: border-box;
+    width: 140px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
     font: inherit;
     background-color: transparent;
     border: 2px solid #000000;
 }
 .appointment-item input:focus{
     border-color: #663d15;
+}
+
+.appointment .button {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .page-title {
@@ -519,10 +562,16 @@ input [type="radio"].visually-hidden {
     display: flex;
 }
 
+.footer-contact{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
 .footer-contacts {
     width: 320px;
     margin: 0;
     margin-right: 80px;
+    margin-bottom: 10px;
 }
 .footer-contacts a {
     color: #ffffff;
@@ -535,18 +584,61 @@ input [type="radio"].visually-hidden {
 .footer-social {
     width: 145px;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
+
+.footer-social b {
+    display: block;
+    margin-bottom: 15px;
+}
+
 .footer-social ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0 auto;
+    padding: 0;
     list-style: none;
 }
-.social-button{
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
     color: #ffffff;
 }
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+    fill: #000000;
+}
+
 .footer-copyright{
     width: 150px;
     text-align: center;
     margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
+
+.footer-copyright .button {
+    display: block;
+    margin-right: 0;
+}
+
+.footer-copyright b {
+    display: block;
+    margin-bottom: 15px;
+}
+
 .modal{
     color: #000000;
     background-color: #f8f3f0;
@@ -580,4 +672,8 @@ input [type="radio"].visually-hidden {
 .restore:hover,
 .restore:focus{
     text-decoration:none;
+}
+
+.temporary {
+    display: none;
 }
