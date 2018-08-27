@@ -756,6 +756,24 @@ input [type="radio"].visually-hidden {
     list-style: none;
     padding: 0;
     margin: 0;
+    
+}
+
+.use-product-list li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.use-product-list li::before {
+    position: absolute;
+    top: 8px;
+    left: -18px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
 }
 
 .prise-for-service {
@@ -763,14 +781,58 @@ input [type="radio"].visually-hidden {
     margin-left: 180px;
 }
 
-/* .prise-for-service table {
- 
-} */
+.prise-for-service h3 {
+    display: block;
+    width: 200px;
+}
+
+.prise-for-service table {
+    width: 460px;
+    border-spacing: 0px;
+    overflow: hidden;
+}
+
+.prise-for-service table td {
+    width: 50%;
+}
+
+.prise-for-service table td {
+    padding-left: 20px;
+}
+
+.prise-for-service table td:last-child {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-left: 0;
+}
 
 .page-description {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.page-description h2 {
+    display: inline-block;
     font-size: 48px;
     line-height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
     text-align: center;
+    position: relative;
+    background-image: url("../img/pattern-light.jpg");
+}
+
+.page-description::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -65px;
+    z-index: 1;
+    border-bottom: 2px solid #000000;
 }
 
 .about-us-text {
