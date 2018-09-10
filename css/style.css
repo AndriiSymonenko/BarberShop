@@ -559,15 +559,18 @@ input [type="radio"].visually-hidden {
 
 .catalog-item-price {
     display: flex;
+    text-align: center;
     margin: 15px;
     margin-top: 0;
 }
 
 .catalog-item-price b {
+    display: block;
     width: 112px;
-    padding: 13px 25px 11px;
+    padding: 13px 35px 11px;
     font-size: 14px;
     line-height: 20px;
+    background-color: #e5e5e5;
 }
 
 .catalog-item-price .button {
