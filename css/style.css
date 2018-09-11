@@ -427,6 +427,11 @@ input [type="radio"].visually-hidden {
 .filters {
     width: 180px;
 }
+
+.hidden-input-filter {
+    display: none;
+}
+
 .filter ul {
     padding: 0;
     margin: 0;
@@ -447,11 +452,6 @@ input [type="radio"].visually-hidden {
     line-height: 30px;
 }
 
-/* .filter fieldset:first-child {
-    margin-bottom: 35px;
-    padding-left: 45px;
-
-} */
 
 .filter-options {
     margin-bottom: 19px;
@@ -507,6 +507,12 @@ input [type="radio"].visually-hidden {
     background-color: #000000;
     border-radius: 50%;
 }
+
+.filter-input:disabled + label {
+    color: #000000;
+  
+    opacity: 0.5;
+  }
 
 .catalog {
     width: 700px;
